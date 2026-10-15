@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illia | Junior QA Tester</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --accent-hover: #0284c7;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h2::before {
+            content: "//";
+            color: var(--accent-color);
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-color);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--bg-color);
+            background-color: var(--accent-color);
+            font-weight: 600;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+            text-align: center;
+            align-self: flex-start;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Cześć, jestem Illia 👋</h1>
+            <div class="subtitle">Junior QA Tester</div>
+        </header>
+
+        <section id="about">
+            <h2>O mnie</h2>
+            <p>Jestem pasjonatem zapewniania jakości oprogramowania. Skupiam się na rzetelnym testowaniu aplikacji oraz ciągłym poszerzaniu swojej wiedzy w obszarze QA.</p>
+            <p>Obecnie dynamicznie rozwijam swoje umiejętności w zakresie <strong>testowania AI</strong> oraz systemów opartych na sztucznej inteligencji.</p>
+            
+            <div class="tag-list">
+                <span class="tag">Postman</span>
+                <span class="tag">Jira</span>
+                <span class="tag">Manual Testing</span>
+                <span class="tag">AI Testing</span>
+                <span class="tag">API Testing</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projekty</h2>
+            <div class="projects-grid">
+                
+                <!-- Projekt 1: Warsztaty -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Koło Warsztaty</div>
+                        <div class="project-desc">Projekt warsztatowy realizowany w ramach koła naukowego. Kliknij, aby zobaczyć szczegóły.</div>
+                    </div>
+                    <a href="https://GonTa-tech.github.io/kolo-warsztaty/" target="_blank" rel="noopener noreferrer" class="btn">Zobacz projekt &rarr;</a>
+                </div>
+
+                <!-- Projekt 2: Postman -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Testy API w Postmanie</div>
+                        <div class="project-desc">Kolekcje testowe do weryfikacji endpointów API REST, scenariusze testowe oraz automatyzacja asercji.</div>
+                    </div>
+                </div>
+
+                <!-- Projekt 3: Jira -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Zarządzanie testami w Jira</div>
+                        <div class="project-desc">Tworzenie przypadków testowych, raportowanie błędów (bug reports) oraz praca z backlogiem projektu.</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Illia. Portfolio hosted on <a href="https://github.com/GonTa-tech" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
